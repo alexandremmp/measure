@@ -5,6 +5,17 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .img-logo {
+    width: 250px;
+  }
+}
+
 .measure {
   position: fixed;
   bottom: 0;

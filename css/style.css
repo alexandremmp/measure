@@ -1,0 +1,31 @@
+body {
+  background: #2B3134;
+  color: #777;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.measure {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #888888;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.label-w,
+.label-h {
+  text-align: center;
+  font-size: 10px;
+}
+
+.width {
+  margin-bottom: 5px;
+}
+
+.window-width-size,
+.window-height-size {
+  text-align: center;
+}

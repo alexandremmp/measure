@@ -49,6 +49,7 @@ body {
 .label-h {
   text-align: center;
   font-size: 10px;
+  font-weight: 600;
 }
 
 .width {
@@ -58,4 +59,5 @@ body {
 .window-width-size,
 .window-height-size {
   text-align: center;
+  font-weight: 700;
 }

@@ -16,6 +16,25 @@ body {
   }
 }
 
+.button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-variant: small-caps;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #888888;
+  outline: 0;
+  background-color: #888888;
+  color: #ffffff;
+}
+
+.button:hover {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #888888;
+}
+
 .measure {
   position: fixed;
   bottom: 0;

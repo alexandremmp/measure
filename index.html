@@ -15,27 +15,33 @@
     <title>Measure</title>
 
     <link rel="stylesheet" href="runtime/globals/css/style.css" type="text/css">
+    <link rel="stylesheet" href="runtime/plugins/bootstrap/css/bootstrap.min.css" type="text/css">
   </head>
 
   <body>
+    <div class="container">
 
-    <div class="logo">
-      <div><img src="runtime/images/logo/measure.png" class="img-logo"></div>
-      <div><button class="button">Click to Hide/Show Measure</button></div>
-    </div>
+      <div class="header text-center">
+        <img src="runtime/images/logo/measure.svg" class="img-logo">
+        <h2 class="title">Measure</h2>
+        <button class="btn btn-success btn-lg button" type="submit">Show/Hide</button>
+      </div>
 
-    <div class="measure">
-      <div class="width">
-        <div class="label-w">Width</div>
-        <div class="window-width-size"></div>
+      <div class="measure">
+        <div class="width">
+          <div class="label-w">Width</div>
+          <div class="window-width-size"></div>
+        </div>
+        <div class="height">
+          <div class="label-h">Height</div>
+          <div class="window-height-size"></div>
+        </div>
       </div>
-      <div class="height">
-        <div class="label-h">Height</div>
-        <div class="window-height-size"></div>
-      </div>
+
     </div>
 
     <script src="runtime/plugins/jquery/jquery.js"></script>
+    <script src="runtime/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="runtime/globals/js/script.js"></script>
 
   </body>

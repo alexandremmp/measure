@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.window-width-size').text($(window).width() + 'px');
+  $('.window-width-size').html(window.outerWidth + 'px');
   $('.window-height-size').text($(window).height() + 'px');
 
   $(".button").click(function(){
@@ -7,9 +7,15 @@ $(document).ready(function() {
   });
 });
 
-$(window).resize(function() {
-  var windowWidthSize = $(window).width();
-  var windowHeightSize = $(window).height();
-  $('.window-width-size').text(windowWidthSize + 'px');
-  $('.window-height-size').text(windowHeightSize + 'px');
-});
+(function($) {
+
+  $(function() {
+
+    $(window).on('resize', function() {
+      $('.window-width-size').html(window.outerWidth + 'px'); //width of the page + scrollbar width 
+      var windowHeightSize = $(window).height();
+      $('.window-height-size').text(windowHeightSize + 'px');
+    });
+  });
+
+})(jQuery);

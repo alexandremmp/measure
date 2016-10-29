@@ -29,14 +29,14 @@
   right: 0;
   background: #525252;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 13px;
   padding: 6px 12px;
 }
 
 .label-w,
 .label-h {
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
 }
 

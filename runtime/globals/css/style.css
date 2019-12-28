@@ -1,26 +1,64 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta Mahee', sans-serif;
+  background: #f2f2f2;
+  color: #525252;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .header {
-  margin: 100px 0;
+  text-align: center;
 }
 
 .img-logo {
   width: 300px;
 }
 
-@media screen and (max-width: 400px) {
-  .img-logo {
-    width: 250px;
-  }
-}
-
 .title {
   font-style: italic;
   font-variant: small-caps;
-  color: #525252;
+  font-size: 32px;
 }
 
-.button {
-  margin-top: 50px;
-  outline: 0 !important;
+.btn-action {
+  width: 120px;
+  height: 50px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mukta Mahee', sans-serif;
+  background-color: #525252;
+  border: 1px solid #525252;
+  color: #fff;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  outline: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all ease 500ms;
+}
+
+.btn-action:hover {
+  background-color: #fff;
+  border: 1px solid #525252;
+  color: #525252;
+  transition: all ease 500ms;
+}
+
+.block-is-invisible {
+  display: none;
 }
 
 .measure {
@@ -29,23 +67,28 @@
   right: 0;
   background: #525252;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 16px;
+  text-align: center;
   padding: 6px 12px;
+  border-top-left-radius: 4px;
 }
 
 .label-w,
 .label-h {
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
 }
 
 .width {
   margin-bottom: 5px;
 }
 
-.window-width-size,
-.window-height-size {
-  text-align: center;
-  font-weight: 700;
+#result {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 575px) {
+  .img-logo {
+    width: 250px;
+  }
 }

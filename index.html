@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Width x Height">
-    <meta name="author" content="Alexandre Pereira">
-    <link rel="shortcut icon" href="runtime/images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="runtime/images/favicon/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="runtime/images/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="runtime/images/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="runtime/images/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="runtime/images/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="runtime/images/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="runtime/images/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="runtime/images/favicon/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="runtime/images/favicon/apple-touch-icon-180x180.png" />
-    <title>Measure</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Width x Height">
+  <meta name="author" content="Alexandre Pereira">
+  <link rel="shortcut icon" href="runtime/multimedia/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="runtime/multimedia/images/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="runtime/multimedia/images/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="runtime/multimedia/images/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="runtime/multimedia/images/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="runtime/multimedia/images/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="runtime/multimedia/images/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="runtime/multimedia/images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="runtime/multimedia/images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="runtime/multimedia/images/favicon/apple-touch-icon-180x180.png" />
+  <title>Measure</title>
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="runtime/globals/css/style.css" type="text/css">
+</head>
 
-    <link rel="stylesheet" href="runtime/globals/css/style.css" type="text/css">
-    <link rel="stylesheet" href="runtime/plugins/bootstrap/css/bootstrap.min.css" type="text/css">
-  </head>
+<body>
+  <main class="container">
 
-  <body>
-    <div class="container">
+    <section class="header">
+      <img src="runtime/multimedia/images/logo/measure.svg" class="img-logo" draggable="false">
+      <h2 class="title">Measure</h2>
+      <button type="button" class="btn-action"></button>
+      <div id="result" style="display: none;"></div>
+    </section>
 
-      <div class="header text-center">
-        <img src="runtime/images/logo/measure.svg" class="img-logo" ondragstart="return false;">
-        <h2 class="title">Measure</h2>
-        <button class="btn btn-success btn-lg button" type="submit">Show/Hide</button>
+    <section class="measure">
+      <div class="width">
+        <div class="label-w">Width</div>
+        <div class="window-width-size"></div>
       </div>
-
-      <div class="measure">
-        <div class="width">
-          <div class="label-w">Width</div>
-          <div class="window-width-size"></div>
-        </div>
-        <div class="height">
-          <div class="label-h">Height</div>
-          <div class="window-height-size"></div>
-        </div>
+      <div class="height">
+        <div class="label-h">Height</div>
+        <div class="window-height-size"></div>
       </div>
+    </section>
 
-    </div>
+  </main>
 
-    <script src="runtime/plugins/jquery/jquery.js"></script>
-    <script src="runtime/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="runtime/globals/js/script.js"></script>
+  <script type="text/javascript" src="runtime/libs/jquery/js/jquery.min.js"></script>
+  <script type="text/javascript" src="runtime/globals/js/script.js"></script>
 
-  </body>
+</body>
 
 </html>

@@ -1,3 +1,6 @@
+const wWidthSize = document.querySelector('.window-width-size');
+const wHeightSize = document.querySelector('.window-height-size');
+
 if (typeof (localStorage) === 'undefined') {
   document.querySelector('result').innerHTML = 'Your browser does not support HTML5 localStorage. Try upgrading.';
 } else if (localStorage.getItem('block') != null) {
@@ -6,14 +9,13 @@ if (typeof (localStorage) === 'undefined') {
 }
 
 $(window).on('resize', () => {
-  $('.window-width-size').html(`${window.outerWidth}px`); // width of the page + scrollbar width
-  const windowHeightSize = $(window).height();
-  $('.window-height-size').text(`${windowHeightSize}px`);
+  wWidthSize.innerHTML = `${window.innerWidth}px`;
+  wHeightSize.innerHTML = `${window.innerHeight}px`;
 });
 
 $(document).ready(() => {
-  $('.window-width-size').html(`${window.outerWidth}px`);
-  $('.window-height-size').text(`${$(window).height()}px`);
+  wWidthSize.innerHTML = `${window.innerWidth}px`;
+  wHeightSize.innerHTML = `${window.innerHeight}px`;
 
   $('.btn-action').text($('.measure').hasClass('block-is-invisible') ? 'Show' : 'Hide');
 
